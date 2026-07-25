@@ -35,6 +35,12 @@ function displayMovies(movieList) {
             <p>${movie.year}</p>
         `;
 
+
+        card.addEventListener("click", () => {
+            openPlayer(movie);
+        });
+
+
         movieContainer.appendChild(card);
 
     });
@@ -42,7 +48,7 @@ function displayMovies(movieList) {
 }
 
 
-// Search System
+// Search
 
 const searchBar = document.getElementById("searchBar");
 
@@ -60,7 +66,7 @@ searchBar.addEventListener("input", () => {
 });
 
 
-// Random Featured Movie
+// Featured Movie
 
 function setFeaturedMovie() {
 
@@ -74,6 +80,51 @@ function setFeaturedMovie() {
 
     document.getElementById("featuredInfo").textContent =
         `Movie • ${featured.year}`;
+
+}
+
+
+// Player
+
+const playerOverlay = document.getElementById("playerOverlay");
+const moviePlayer = document.getElementById("moviePlayer");
+const playerTitle = document.getElementById("playerTitle");
+const closePlayer = document.getElementById("closePlayer");
+
+
+function openPlayer(movie) {
+
+    playerOverlay.style.display = "flex";
+
+    playerTitle.textContent = movie.title;
+
+    moviePlayer.src = convertDriveLink(movie.video);
+
+}
+
+
+closePlayer.addEventListener("click", () => {
+
+    playerOverlay.style.display = "none";
+
+    moviePlayer.src = "";
+
+});
+
+
+// Convert Google Drive Links
+
+function convertDriveLink(url) {
+
+    if (url.includes("drive.google.com")) {
+
+        const id = url.match(/\/d\/(.*?)\//)[1];
+
+        return `https://drive.google.com/file/d/${id}/preview`;
+
+    }
+
+    return url;
 
 }
 
