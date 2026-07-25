@@ -3,15 +3,18 @@
         "title": "A Bug's Life",
         "year": "1998",
         "cover": "covers/bugs-life.jpg"
+	"video": "https://drive.google.com/file/d/1AIq4OqiMWiY9zZSayF5VID7pfTwSH6BM/view"
     },
     {
         "title": "Cars",
         "year": "2006",
         "cover": "covers/cars.jpg"
+	"video": "https://drive.google.com/file/d/106N7zd611ShtPMOx97XwFSxkg8theQLN/view"
     },
     {
         "title": "Toy Story",
         "year": "1995",
         "cover": "covers/toy-story.jpg"
+	"video": "https://drive.google.com/file/d/1fW6Ov5NIaRh4h78-qBpWeln_Vs9oEXOQ/view"
     }
 ]
