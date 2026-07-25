@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Library</title>
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Intro Video -->
+    <div id="intro">
+
+        <video id="introVideo" autoplay muted playsinline>
+            <source src="videos/intro.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+
+    <!-- Main Website -->
+    <div id="website">
+
+        <header>
+            Movie Library
+        </header>
+
+
+        <section id="featured">
+
+    <div class="overlay">
+
+        <h1 id="featuredTitle"></h1>
+
+        <p id="featuredInfo"></p>
+
+        <button>
+            Watch Now
+        </button>
+
+    </div>
+
+</section>
+
+
+        <h2 class="sectionTitle">
+    All Movies
+</h2>
+
+<input 
+    id="searchBar"
+    type="text"
+    placeholder="Search movies..."
+>
+
+<div id="movieContainer"></div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
