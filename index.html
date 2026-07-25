@@ -37,33 +37,57 @@
 
         <section id="featured">
 
-    <div class="overlay">
+            <div class="overlay">
 
-        <h1 id="featuredTitle"></h1>
+                <h1 id="featuredTitle"></h1>
 
-        <p id="featuredInfo"></p>
+                <p id="featuredInfo"></p>
 
-        <button>
-            Watch Now
-        </button>
+                <button>
+                    Watch Now
+                </button>
 
-    </div>
+            </div>
 
-</section>
+        </section>
 
 
         <h2 class="sectionTitle">
-    All Movies
-</h2>
+            All Movies
+        </h2>
 
-<input 
-    id="searchBar"
-    type="text"
-    placeholder="Search movies..."
->
 
-<div id="movieContainer"></div>
+        <input 
+            id="searchBar"
+            type="text"
+            placeholder="Search movies..."
+        >
 
+
+        <div id="movieContainer"></div>
+
+
+    </div>
+
+
+    <!-- Movie Player -->
+    <div id="playerOverlay">
+
+        <button id="closePlayer">
+            ✕
+        </button>
+
+
+        <div id="playerBox">
+
+            <h1 id="playerTitle"></h1>
+
+            <iframe 
+                id="moviePlayer"
+                allowfullscreen>
+            </iframe>
+
+        </div>
 
     </div>
 
